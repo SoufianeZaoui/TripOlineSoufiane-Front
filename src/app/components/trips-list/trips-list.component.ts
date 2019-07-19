@@ -10,6 +10,8 @@ import { Trip } from 'src/app/domain/trip';
 export class TripsListComponent implements OnInit {
 
   data: Trip[];
+  width: number = 100;
+
 
   constructor(private service: TripsService) { }
 
