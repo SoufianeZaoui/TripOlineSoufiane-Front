@@ -15,7 +15,7 @@
           <h4 class="card-title">{{ product.destination }}</h4>
           <h2 class="card-text">{{ product.price |
               currency:'EUR':'symbol':'1.2-2'}}</h2>
-              <a class="btn btn-primary" > Show Details </a>
+              <a class="btn btn-primary" [routerLink]="['/details',product.id]" routerLinkActive="router-link-active" ></a>
               </div>
               </div>
               </div>

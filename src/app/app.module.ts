@@ -10,6 +10,7 @@ import { HttpClientModule} from '@angular/common/http';
 import { WelcomeComponent } from './component/welcome/welcome.component';
 import { NotfoundComponent } from './component/notfound/notfound.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { TripsDetailsComponent } from './component/trips-details/trips-details.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     FooterComponent,
     TripsListComponent,
     WelcomeComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    TripsDetailsComponent
   ],
   imports: [
     BrowserModule,
