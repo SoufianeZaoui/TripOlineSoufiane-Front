@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TripsService } from 'src/app/services/trips.service';
+import { Trip } from 'src/app/domain/trip';
 
 @Component({
   selector: 'app-trips-list',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TripsListComponent implements OnInit {
 
-  constructor() { }
+  data: Trip[];
+
+  constructor(private service: TripsService) { }
 
   ngOnInit() {
+    this.service.getAllTrips().subscribe(
+      response => this.data = response,
+      erreur => console.log('Attention il y a l\'erreur ' + erreur)
+    );
   }
+    // this.data='('
 
 }

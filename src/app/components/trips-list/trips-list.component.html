@@ -1,1 +1,26 @@
-<p>trips-list works!</p>
+<div class="card">
+  <div class="card-header">
+   <h3> Trips List </h3>
+  </div>
+  <div class="card-body">
+    <table class="table">
+    <thead>
+    <tr>
+     <th>pictureUrl</th>
+     <th>destination</th>
+     <th>Price</th>
+    </tr>
+
+    </thead>
+    </table>
+    <tbody>
+      <tr *ngFor="let item of data">
+        <td> <img [src]= item.pictureUrl> </td>
+        <td>{{item.destination}}</td>
+        <td>{{item.price}}</td>
+    </tbody>
+  </div>
+  <div class="card-footer text-muted">
+    Footer
+  </div>
+</div>
