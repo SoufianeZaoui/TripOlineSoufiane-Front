@@ -6,16 +6,18 @@
   <div class="card-body">
       <div class="row">
           <div class="card align-items-center" style="width:400px; margin: 5px"
-          *ngFor='let product of data'>
+          *ngFor='let item of data'>
           <img class="card-img-top center"
-          [src]='product.pictureUrl' [title]='product.destination'
+          [src]='item.pictureUrl' [title]='item.destination'
           [style.width.px]='"200"' [style.height.px]='"200"'
           [style.margin.px]='2'>
           <div class="card-body text-center">
-          <h4 class="card-title">{{ product.destination }}</h4>
-          <h2 class="card-text">{{ product.price |
+          <h4 class="card-title">{{ item.destination }}</h4>
+          <h2 class="card-text">{{ item.price |
               currency:'EUR':'symbol':'1.2-2'}}</h2>
-              <a class="btn btn-primary" [routerLink]="['/details',product.id]" routerLinkActive="router-link-active" ></a>
+              <a class="btn btn-primary"
+               [routerLink]="['/details',item.id]"
+               routerLinkActive="router-link-active" > Show Details </a>
               </div>
               </div>
               </div>

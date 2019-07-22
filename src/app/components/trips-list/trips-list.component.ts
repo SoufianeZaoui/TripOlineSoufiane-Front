@@ -12,7 +12,6 @@ export class TripsListComponent implements OnInit {
   data: Trip[];
   width: number = 100;
 
-
   constructor(private service: TripsService) { }
 
   ngOnInit() {
@@ -21,6 +20,6 @@ export class TripsListComponent implements OnInit {
       erreur => console.log('Attention il y a l\'erreur ' + erreur)
     );
   }
-    // this.data='('
+
 
 }

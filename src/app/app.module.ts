@@ -11,6 +11,7 @@ import { WelcomeComponent } from './component/welcome/welcome.component';
 import { NotfoundComponent } from './component/notfound/notfound.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { TripsDetailsComponent } from './component/trips-details/trips-details.component';
+import { CartComponent } from './componenents/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TripsDetailsComponent } from './component/trips-details/trips-details.c
     TripsListComponent,
     WelcomeComponent,
     NotfoundComponent,
-    TripsDetailsComponent
+    TripsDetailsComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
